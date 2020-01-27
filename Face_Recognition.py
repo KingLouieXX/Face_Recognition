@@ -1,6 +1,6 @@
 # Luis Zepeda
-# AutoDrone: Face Recognition
-# 01/21/20
+# AutoDrone: Face Detection (not recognition)
+# 01/26/20
 
 #Base Code from Muhammad Rizwan
 import cv2
@@ -24,7 +24,7 @@ while True:
         top, right, bottom, left = face_location
         print("A face is located at pixel location Top: {}, Left: {}, Bottom: {}, Right: {}".format(top, left, bottom,
                                                                                                     right))
-        cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 3)
+        cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 3)
 
     cv2.imshow("Frame", frame)
 
